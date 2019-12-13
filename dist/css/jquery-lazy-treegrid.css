@@ -1,0 +1,37 @@
+﻿.table-tree {
+    display: table;
+    position: relative;
+}
+
+.table-tree-body {
+    display: table-row-group;
+}
+
+.table-tree-header {
+    display: table-header-group;
+}
+
+.table-tree-tr {
+    display: table-row;
+}
+
+.table-tree-td, .table-tree-th {
+    display: table-cell;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+div.table-tree-colspan,
+div.table-tree-colspan + div.table-tree-tr {
+    border: 0;
+}
+
+.table-tree-colspan {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.table-tree-dummycell {
+    border-color: transparent;
+}
